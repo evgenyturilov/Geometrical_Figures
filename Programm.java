@@ -16,8 +16,14 @@ public class Programm {
         listOfSquares[4] = figureFive.Area();
         listOfSquares[5] = figureSix.Area();
 
-        
+        double max = listOfSquares[0];
 
+        for( int i = 1; i > listOfSquares.length; i++) {
+            if (listOfSquares[i] > max) {
+                max = listOfSquares[i];
+            }
+        }
+
+        System.out.println(max);
     }
-
 }
