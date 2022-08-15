@@ -1,7 +1,7 @@
 /**
  * Класс для равностороннего треугольника с длиной стороны, определяемой двумя точками на плоскости
  */
-public class Triangle extends Shape{
+public class Triangle extends Figure{
 
     private Point a;
     private Point b;
@@ -28,13 +28,12 @@ public class Triangle extends Shape{
         this.b = b;
     }
 
-    /**
-     * Функция вычисления площади равностороннего треугольника
-     * @return
-     */
+    @Override
     public double Area() {
         double triangleSide = Math.sqrt(Math.pow((a.getX() - b.getX()), 2)) + Math.sqrt(Math.pow((a.getY() - b.getY()), 2));
         double square = Math.pow(triangleSide, 2) * Math.sqrt(3) / 4;
         return square;
     }
+
+        
 }

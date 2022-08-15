@@ -1,7 +1,7 @@
 /**
  * Класс задает форму и цвет фигуры
  */
-public class Shape {
+public abstract class Figure {
 
     protected String shape;
     protected String colour;
@@ -10,7 +10,7 @@ public class Shape {
      * @param shape форма фигуры
      * @param colour цвет фигуры
      */
-    protected Shape(String shape, String colour) {
+    protected Figure(String shape, String colour) {
         this.shape = shape;
         this.colour = colour;
     }
@@ -23,11 +23,9 @@ public class Shape {
         return colour;
     }
 
-    public void setShape(String shape) {
-        this.shape = shape;
-    }
-
     public void setColour(String colour) {
         this.colour = colour;
     }
+
+    public abstract double Area();
 }

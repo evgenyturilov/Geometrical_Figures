@@ -1,7 +1,7 @@
 /**
  * Класс квадратов, заданных на плоскости двумя точками
  */
-public class Square extends Shape {
+public class Square extends Figure {
     
     private Point a;
     private Point b;
@@ -28,13 +28,13 @@ public class Square extends Shape {
         this.b = b;
     }
 
-    /**
-     * Функция вычисления площади квадрата
-     * @return
-     */
+    @Override
     public double Area() {
         double squareSide = Math.sqrt(Math.pow((a.getX() - b.getX()), 2)) + Math.sqrt(Math.pow((a.getY() - b.getY()), 2));
         double square = Math.pow(squareSide, 2);
         return square;
-    }   
+    }
+    
+        
+       
 }
