@@ -1,31 +1,16 @@
 /**
  * Класс кругов, заданных на плоскости точкой в центре круга и точкой на окружности
  */
-public class Circle extends Figure{
-    
-    private Point a;
-    private Point b;
+public class Circle extends Figure {
 
-    public Circle(String shape, String colour, Point a, Point b) {
-        super(shape , colour);
-        this.a = a;
-        this.b = b;
+    private String shape = "Круг";
+
+    public String getShape() {
+        return shape;
     }
 
-    public Point getA() {
-        return a;
-    }
-
-    public Point getB() {
-        return b;
-    }
-
-    public void setA(Point a) {
-        this.a = a;
-    }
-
-    public void setB(Point b) {
-        this.b = b;
+    public Circle(Point a, Point b) {
+        super(a, b);
     }
 
     @Override
@@ -34,5 +19,5 @@ public class Circle extends Figure{
         double square = (Math.PI)*(Math.pow(radius, 2));
         return square;
     }
-
+    
 }
