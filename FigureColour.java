@@ -1,6 +1,5 @@
-public class FigureColour {
-    
+public enum FigureColour {
+    RED,
+    GREEN,
+    BLUE;
 }
-
-    
-

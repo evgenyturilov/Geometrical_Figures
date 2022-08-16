@@ -1,23 +1,24 @@
-/**
- * Класс кругов, заданных на плоскости точкой в центре круга и точкой на окружности
- */
 public class Circle extends Figure {
 
-    private String shape = "Круг";
+        public Circle(Point a, Point b, FigureColour colour) {
+                super(a, b, colour);
+        }
 
-    public String getShape() {
-        return shape;
-    }
+        @Override
+        public String Shape() {
+                return "Круг";
+        }
 
-    public Circle(Point a, Point b) {
-        super(a, b);
-    }
+        @Override
+        public double Area() {
+                double diameter = Math.sqrt(Math.pow((a.getX() - b.getX()), 2)) + Math.sqrt(Math.pow((a.getY() - b.getY()), 2));
+                double square = (Math.PI)*(Math.pow(diameter, 2)/4);
+                return square;
+        }
 
-    @Override
-    public double Area() {
-        double radius = Math.sqrt(Math.pow((a.getX() - b.getX()), 2)) + Math.sqrt(Math.pow((a.getY() - b.getY()), 2));
-        double square = (Math.PI)*(Math.pow(radius, 2));
-        return square;
-    }
+    
+
+       
+    
     
 }
