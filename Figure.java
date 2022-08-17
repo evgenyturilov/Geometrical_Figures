@@ -9,4 +9,10 @@ public abstract class Figure implements FigureProperties{
         this.b = b;
         this.colour = colour;
     }
+
+    @Override
+    public String toString() {
+        
+        return String.format("Фигура: %s, Цвет: %s, Площадь: %f\n", Shape(), colour, Area());
+    }
 }
