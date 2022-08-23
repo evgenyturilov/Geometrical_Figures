@@ -1,10 +1,10 @@
 
-public abstract class Figure implements FigureProperties{
+public abstract class Figure2D implements FigureProperties{
     protected Point a;
     protected Point b;
     protected FigureColour colour;
 
-    public Figure(Point a, Point b, FigureColour colour) {
+    public Figure2D(Point a, Point b, FigureColour colour) {
         this.a = a;
         this.b = b;
         this.colour = colour;

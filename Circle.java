@@ -1,4 +1,5 @@
-public class Circle extends Figure {
+
+public class Circle extends Figure2D {
 
         public Circle(Point a, Point b, FigureColour colour) {
                 super(a, b, colour);

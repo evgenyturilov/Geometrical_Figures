@@ -1,5 +1,5 @@
 
-public class Square extends Figure{
+public class Square extends Figure2D{
 
     public Square(Point a, Point b, FigureColour colour) {
         super(a, b, colour);
