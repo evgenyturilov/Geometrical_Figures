@@ -1,3 +1,4 @@
+
 public class Cube extends Figure3D{
 
     public Cube(Point a, Point b, FigureColour colour) {

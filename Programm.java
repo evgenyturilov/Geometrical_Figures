@@ -29,7 +29,7 @@ public class Programm {
                 maxFigure = item;
             }
         }
-        System.out.printf("\nМаксикальная площадь %f у фигуры %s, цвета %s\n\n", max, maxFigure.Shape(), maxFigure.colour );
+        System.out.printf("\nМаксикальная площадь %f у фигуры %s, цвета %s\n\n", max, maxFigure.Shape(), maxFigure.colour.getName() );
     }
     public static void main(String[] args) {
         

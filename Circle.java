@@ -1,4 +1,3 @@
-
 public class Circle extends Figure2D {
 
         public Circle(Point a, Point b, FigureColour colour) {
